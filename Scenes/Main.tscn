@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/2d Platformer/transition_2dplatformer.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/2d  TopDownScroller/transition_topdown2d.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FirstPerson/goto_firstperson_scene.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/3rd Person/goto_3rd_person.cs" type="Script" id=4]
+
+[node name="Main" type="Node2D"]
+
+[node name="2d platformer" type="Button" parent="."]
+margin_left = 329.0
+margin_top = 90.0
+margin_right = 585.0
+margin_bottom = 174.0
+text = "2d platformer"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2d topdown" type="Button" parent="."]
+margin_left = 330.0
+margin_top = 192.0
+margin_right = 585.0
+margin_bottom = 270.0
+text = "2d topdown"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="First Person" type="Button" parent="."]
+margin_left = 332.0
+margin_top = 295.236
+margin_right = 585.0
+margin_bottom = 384.236
+text = "First Person"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3rd person" type="Button" parent="."]
+margin_left = 332.0
+margin_top = 409.272
+margin_right = 585.0
+margin_bottom = 498.272
+text = "3rd person"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
