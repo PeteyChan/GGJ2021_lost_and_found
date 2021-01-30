@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Models/Grass/grass.gltf" type="PackedScene" id=2]
+
+[node name="Grass" type="Spatial"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="grass" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.331868, 0.150689, 0.109691, -0.143076, 0.349526, -0.0472902, -0.11945, 0, 0.361396, 0, 0, 0 )
+
+[editable path="grass"]

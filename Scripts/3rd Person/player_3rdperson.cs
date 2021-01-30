@@ -36,9 +36,7 @@ public class player_3rdperson : RigidBody
         yaw_transform = FindNode("yaw") as Spatial;
         pitch_transform = FindNode("pitch") as Spatial;
 
-        player_statemachine = new StateMachine(
-            new movement(input, this, camera)
-            );
+        player_statemachine = new StateMachine( new movement(input, this, camera));
     }
 
     public override void _Process(float delta)
@@ -52,7 +50,6 @@ public class player_3rdperson : RigidBody
         pitch_transform.RotationDegrees = new Vector3(pitch, 0, 0);
         yaw_transform.RotationDegrees = new Vector3(0, yaw, 0);        
     }
-
 
     class movement: State
     {

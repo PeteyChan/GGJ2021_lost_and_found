@@ -1,6 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/FirstPerson/player_firstperson.cs" type="Script" id=1]
+[ext_resource path="res://Models/Grass/grass.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Models/Rock/Rock.tscn" type="PackedScene" id=3]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.0
@@ -38,7 +40,7 @@ material/0 = null
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0110776, 0.0826044, -0.0176803 )
 
 [node name="StaticBody" type="StaticBody" parent="."]
-transform = Transform( 4.66537, 0, 0, 0, 0.184588, 0, 0, 0, 3.41215, 0.00872231, -0.184213, -0.00610685 )
+transform = Transform( 4.66537, 0, 0, 0, 0.184588, 0, 0, 0, 3.41215, -0.00631141, -0.175748, -0.00584566 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -88,3 +90,27 @@ shape = SubResource( 4 )
 [node name="MeshInstance" type="MeshInstance" parent="StaticBody4"]
 mesh = SubResource( 5 )
 material/0 = null
+
+[node name="Grass" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.0430091, 0, 0.999075, 0.335108, 0.942069, 0.014426, -0.941197, 0.335419, -0.0405175, 2.2353, -0.0305401, 3.38671 )
+
+[node name="Grass2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.107739, 0, 0.994179, 0, 1, 0, -0.994179, 0, 0.107739, 1.34024, -0.0289565, 3.36599 )
+
+[node name="Grass3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0707949, 0.002403, 0.997488, -0.205755, 0.978527, 0.0122457, -0.976039, -0.206105, 0.0697691, 2.07241, -0.0493947, 3.32446 )
+
+[node name="Grass4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.47107, 0.299047, 0.416726, -0.268566, 1.52745, -0.148055, -0.436992, 0.0679631, 1.49384, 3.44517, -0.0311241, 2.74284 )
+
+[node name="Grass7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.896735, 0.375669, -1.58596, -0.972787, 1.57574, -0.176786, 1.3077, 0.914572, 0.956037, 3.67464, -0.0311241, 1.88562 )
+
+[node name="Grass6" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.0178036, -0.103432, 0.994477, 0.436148, 0.89421, 0.100812, -0.899699, 0.435534, 0.0291915, 2.72075, -0.0311241, 3.409 )
+
+[node name="Grass5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.00377494, -0.0882073, 0.996095, -0.578624, 0.81222, 0.0741175, -0.815586, -0.576644, -0.0479728, 3.036, -0.0339861, 3.4155 )
+
+[node name="Rock" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.600313, 0, 0.37589, 0, 0.708286, 0, -0.37589, 0, -0.600313, 4.04928, 0.00884038, 2.57442 )
