@@ -18,7 +18,6 @@ public class player_3rdperson : RigidBody
 
         public Vector2 move => new Vector2(right - left, back - forward);
         public Vector2 look => new Vector2(look_left - look_right, look_down - look_up);
-
     }
 
     StateMachine player_statemachine;
@@ -35,7 +34,6 @@ public class player_3rdperson : RigidBody
         camera = FindNode("camera") as Camera;
         yaw_transform = FindNode("yaw") as Spatial;
         pitch_transform = FindNode("pitch") as Spatial;
-
         player_statemachine = new StateMachine( new movement(input, this, camera));
     }
 
